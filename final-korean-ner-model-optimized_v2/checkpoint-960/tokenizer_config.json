@@ -1,0 +1,7091 @@
+{
+  "added_tokens_decoder": {
+    "0": {
+      "content": "<s>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "1": {
+      "content": "<pad>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "2": {
+      "content": "</s>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "3": {
+      "content": "<unk>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "9": {
+      "content": "-",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "294": {
+      "content": "S",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "568": {
+      "content": "I",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "1052": {
+      "content": "R",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "1328": {
+      "content": "+",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250001": {
+      "content": "<mask>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250002": {
+      "content": "Carbapenem-resistant Enterobacteriaceae",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250003": {
+      "content": "창상",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250004": {
+      "content": "Folliculitis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250005": {
+      "content": "글로비카텔라 상귀니스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250006": {
+      "content": "비브리오 플루비알리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250007": {
+      "content": "Brucella melitensis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250008": {
+      "content": "세프타지딤",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250009": {
+      "content": "비브리오 콜레라균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250010": {
+      "content": "Pericardial fluid",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250011": {
+      "content": "Brevibacterium ravenspurgense",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250012": {
+      "content": "바실러스 와이엔슈테파넨시스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250013": {
+      "content": "반코마이신 내성 장구균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250014": {
+      "content": "시트로박터 코세리",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250015": {
+      "content": "노카르디아 종",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250016": {
+      "content": "벤질페니실린",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250017": {
+      "content": "Pseudomonas gessardii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250018": {
+      "content": "에라바사이클린",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250019": {
+      "content": "칸디다 논알비칸스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250020": {
+      "content": "대장균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250021": {
+      "content": "테디조리드",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250022": {
+      "content": "Pseudomonas putida",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250023": {
+      "content": "Colonic perforation",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250024": {
+      "content": "어타페넴",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250025": {
+      "content": "슈도모나스 제사르디",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250026": {
+      "content": "엔테로박터 클로아카이",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250027": {
+      "content": "Staphylococcus capitis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250028": {
+      "content": "슈도모나스 플루오레센스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250029": {
+      "content": "Amoxicillin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250030": {
+      "content": "LAMP 검사",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250031": {
+      "content": "Staphylococcus petrasii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250032": {
+      "content": "항생제 관련 출혈성 대장염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250033": {
+      "content": "페니실리움 속",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250034": {
+      "content": "포도상구균 루그두넨시스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250035": {
+      "content": "Benzylpenicillin (Meni)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250036": {
+      "content": "칸디다 파라실로시스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250037": {
+      "content": "세폭시틴",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250038": {
+      "content": "패혈증",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250039": {
+      "content": "브레비박테리움 카세이",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250040": {
+      "content": "반응성 관절염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250041": {
+      "content": "Shewanella putrefaciens",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250042": {
+      "content": "아시네토박터 르워피",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250043": {
+      "content": "달바반신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250044": {
+      "content": "하베카신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250045": {
+      "content": "Ticarcillin/Clavulanic Acid",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250046": {
+      "content": "Burkholderia lata",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250047": {
+      "content": "MRSA",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250048": {
+      "content": "Levofloxacin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250049": {
+      "content": "Amoxicillin/Clavulanic Acid",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250050": {
+      "content": "Burkholderia vietnamiensis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250051": {
+      "content": "Dalbavancin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250052": {
+      "content": "Rahnella aquatilis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250053": {
+      "content": "아시네토박터 칼코아세티쿠스-바우마니 복합체",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250054": {
+      "content": "세라티아 오도리페라",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250055": {
+      "content": "선천성 매독",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250056": {
+      "content": "Clofazimine",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250057": {
+      "content": "Oxacillin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250058": {
+      "content": "Brevibacterium casei",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250059": {
+      "content": "아미카신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250060": {
+      "content": "가스 괴저",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250061": {
+      "content": "이질균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250062": {
+      "content": "락토바실러스 종",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250063": {
+      "content": "Salmonella Group B",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250064": {
+      "content": "세라티아 플리뮤티카",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250065": {
+      "content": "Achromobacter xylosoxidans",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250066": {
+      "content": "엔테로박터 속",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250067": {
+      "content": "Candida species not albicans",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250068": {
+      "content": "랄스토니아 인시디오사",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250069": {
+      "content": "Pantoea spp.",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250070": {
+      "content": "포도상구균 호미니스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250071": {
+      "content": "Streptococcus pneumoniae",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250072": {
+      "content": "플루코나졸",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250073": {
+      "content": "Pontiac fever",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250074": {
+      "content": "Burkholderia cepacia",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250075": {
+      "content": "Staphylococcus epidermidis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250076": {
+      "content": "Pseudomonas aeruginosa",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250077": {
+      "content": "살모넬라",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250078": {
+      "content": "메티실린 내성 황색포도알균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250079": {
+      "content": "장염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250080": {
+      "content": "보리코나졸",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250081": {
+      "content": "매독균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250082": {
+      "content": "세프트리악손",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250083": {
+      "content": "세라티아 네마토디필라",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250084": {
+      "content": "코아귤레이스 음성 포도상구균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250085": {
+      "content": "Ceftazidime",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250086": {
+      "content": "MBL",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250087": {
+      "content": "Pseudomonas oryzihabitans",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250088": {
+      "content": "Staphylococcus lugdunensis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250089": {
+      "content": "Azithromycin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250090": {
+      "content": "Lactobacillus spp.",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250091": {
+      "content": "Providencia rettgeri",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250092": {
+      "content": "늑막염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250093": {
+      "content": "Pertussis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250094": {
+      "content": "암피실린/설박탐",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250095": {
+      "content": "Streptococcus mitis group",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250096": {
+      "content": "마이코플라스마 폐렴균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250097": {
+      "content": "Tetracycline",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250098": {
+      "content": "Neisseria subflava",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250099": {
+      "content": "칸디다 오리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250100": {
+      "content": "Epiglottitis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250101": {
+      "content": "Skin lesion",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250102": {
+      "content": "Enteritis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250103": {
+      "content": "Typhoid fever",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250104": {
+      "content": "감수성",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250105": {
+      "content": "Ampicillin/Sulbactam",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250106": {
+      "content": "연쇄상구균 카니스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250107": {
+      "content": "비피도박테리움 롱굼",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250108": {
+      "content": "파라티푸스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250109": {
+      "content": "Neonatal sepsis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250110": {
+      "content": "Conjunctivitis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250111": {
+      "content": "Streptococcus pluranimalium",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250112": {
+      "content": "Gentamicin High Level (synergy)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250113": {
+      "content": "Cefotaxime (Other)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250114": {
+      "content": "메로페넴",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250115": {
+      "content": "Streptococcus mitis (viridans strep)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250116": {
+      "content": "암포테리신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250117": {
+      "content": "Peritonitis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250118": {
+      "content": "Urine culture",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250119": {
+      "content": "Nasal swab",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250120": {
+      "content": "엔테로코커스 카셀리플라부스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250121": {
+      "content": "세포디짐",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250122": {
+      "content": "클렙시엘라 폐렴균 아종 폐렴균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250123": {
+      "content": "Ciprofloxacin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250124": {
+      "content": "슈도모나스 프라기",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250125": {
+      "content": "Veillonella parvula",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250126": {
+      "content": "다프토마이신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250127": {
+      "content": "트리메토프림/설파메톡사졸",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250128": {
+      "content": "피페라실린",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250129": {
+      "content": "Staphylococcus pasteuri",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250130": {
+      "content": "마실리아 속",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250131": {
+      "content": "미카펀진",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250132": {
+      "content": "스핑고박테리움 스피리티보럼",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250133": {
+      "content": "암포테리신 B",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250134": {
+      "content": "Bacillus species",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250135": {
+      "content": "세균성이질",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250136": {
+      "content": "마이크로코커스 루테우스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250137": {
+      "content": "Bilophila wadsworthia",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250138": {
+      "content": "폐렴",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250139": {
+      "content": "슈도모나스 코레엔시스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250140": {
+      "content": "칸디다",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250141": {
+      "content": "Micrococcus luteus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250142": {
+      "content": "연쇄상구균 디스갈락티에",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250143": {
+      "content": "Streptococcus mutans (viridans strep)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250144": {
+      "content": "Staphylococcus caprae",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250145": {
+      "content": "Brachybacterium conglomeratum",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250146": {
+      "content": "폐렴구균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250147": {
+      "content": "Fosfomycin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250148": {
+      "content": "슈도모나스 라멜리",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250149": {
+      "content": "Staphylococcus aureus (MRSA)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250150": {
+      "content": "슬라키아균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250151": {
+      "content": "Nocardia spp.",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250152": {
+      "content": "뇌척수액",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250153": {
+      "content": "Streptococcus cristatus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250154": {
+      "content": "Pseudomonas",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250155": {
+      "content": "바실러스 알티투디니스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250156": {
+      "content": "Actinomyces spp.",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250157": {
+      "content": "ESBL",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250158": {
+      "content": "Varicella",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250159": {
+      "content": "바실러스 아트로페우스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250160": {
+      "content": "Doripenem",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250161": {
+      "content": "슈도모나스 루테올라",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250162": {
+      "content": "Chloramphenicol",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250163": {
+      "content": "포도상구균 카프라이",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250164": {
+      "content": "시트로박터 프룬디",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250165": {
+      "content": "Fluoroquinolone resistance",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250166": {
+      "content": "후두개염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250167": {
+      "content": "Bacteroides thetaiotaomicron",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250168": {
+      "content": "Lactobacillus malefermentans",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250169": {
+      "content": "Salpingitis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250170": {
+      "content": "내성",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250171": {
+      "content": "비결핵성 항산균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250172": {
+      "content": "Staphylococcus pettenkoferi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250173": {
+      "content": "로도코커스 코프로필루스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250174": {
+      "content": "황색포도알균 (MRSA)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250175": {
+      "content": "Yersinia enterocolitica",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250176": {
+      "content": "베일로넬라 파불라",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250177": {
+      "content": "이미페넴",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250178": {
+      "content": "엔테로코커스 패칼리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250179": {
+      "content": "Aspergillus fumigatus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250180": {
+      "content": "연쇄상구균 아갈락티에",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250181": {
+      "content": "Streptococcus anginosus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250182": {
+      "content": "캄필로박터 제주니",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250183": {
+      "content": "옥사실린",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250184": {
+      "content": "Cystitis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250185": {
+      "content": "살모넬라 그룹 B",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250186": {
+      "content": "Listeriosis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250187": {
+      "content": "Streptococcus equisimilis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250188": {
+      "content": "Bacillus mojavensis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250189": {
+      "content": "녹농균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250190": {
+      "content": "레지오넬라 뉴모필라",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250191": {
+      "content": "Enterobacter cloacae",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250192": {
+      "content": "Tuberculosis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250193": {
+      "content": "Wound",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250194": {
+      "content": "Norfloxacin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250195": {
+      "content": "Congenital syphilis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250196": {
+      "content": "텔라반신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250197": {
+      "content": "Micafungin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250198": {
+      "content": "레보플록사신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250199": {
+      "content": "폐렴간균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250200": {
+      "content": "Bacillus cereus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250201": {
+      "content": "Benzylpenicillin (Oral)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250202": {
+      "content": "VRSA",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250203": {
+      "content": "Vibrio parahaemolyticus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250204": {
+      "content": "Streptococcus dysgalactiae",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250205": {
+      "content": "파에니바실러스 폴리믹사",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250206": {
+      "content": "Urinary tract infection",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250207": {
+      "content": "포도상구균 시우리",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250208": {
+      "content": "락토바실러스 페롤렌스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250209": {
+      "content": "슈도모나스 오티티디스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250210": {
+      "content": "연쇄상구균 고도니",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250211": {
+      "content": "라이조비움 라디오박터",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250212": {
+      "content": "Burkholderia cenocepacia",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250213": {
+      "content": "클로파지민",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250214": {
+      "content": "Salmonella Group D",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250215": {
+      "content": "포도상구균 카피티스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250216": {
+      "content": "Staphylococcus chromogenes",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250217": {
+      "content": "Branhamella catarrhalis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250218": {
+      "content": "Cyberlindnera fabianii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250219": {
+      "content": "Pseudomonas luteola",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250220": {
+      "content": "비피도박테리움 아도레센티스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250221": {
+      "content": "로제오모나스 질라디",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250222": {
+      "content": "Blood culture",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250223": {
+      "content": "Vibrio fluvialis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250224": {
+      "content": "아스페르길루스 플라부스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250225": {
+      "content": "슈도모나스 오리지하비탄스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250226": {
+      "content": "슈도모나스 플레코글로시시다",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250227": {
+      "content": "Moraxella osloensis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250228": {
+      "content": "연쇄상구균 앤지노서스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250229": {
+      "content": "헤모필루스 인플루엔자",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250230": {
+      "content": "Tigecycline",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250231": {
+      "content": "슈도모나스 싱잔타",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250232": {
+      "content": "아목시실린",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250233": {
+      "content": "Pleurisy",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250234": {
+      "content": "폴리믹신 B",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250235": {
+      "content": "Bacillus altitudinis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250236": {
+      "content": "Lactobacillus perolens",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250237": {
+      "content": "Pseudomonas lamellii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250238": {
+      "content": "MRCNS",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250239": {
+      "content": "카스포펀진",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250240": {
+      "content": "Campylobacter jejuni",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250241": {
+      "content": "Pyelonephritis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250242": {
+      "content": "용혈성 요독 증후군",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250243": {
+      "content": "아시네토박터 바우마니",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250244": {
+      "content": "Brain abscess",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250245": {
+      "content": "페니실린",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250246": {
+      "content": "퓨사리움 종",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250247": {
+      "content": "트리코스포론 아사히",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250248": {
+      "content": "귀 도말",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250249": {
+      "content": "세픽심",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250250": {
+      "content": "Acinetobacter",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250251": {
+      "content": "혈액",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250252": {
+      "content": "객담배양",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250253": {
+      "content": "포도상구균 페트라시",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250254": {
+      "content": "벤질페니실린(Other)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250255": {
+      "content": "장티푸스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250256": {
+      "content": "Staphylococcus auricularis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250257": {
+      "content": "Enterococcus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250258": {
+      "content": "Stenotrophomonas",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250259": {
+      "content": "스테노트로포모나스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250260": {
+      "content": "스펙티노마이신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250261": {
+      "content": "Pseudomonas nitroreducens",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250262": {
+      "content": "Klebsiella pneumoniae ssp pneumoniae",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250263": {
+      "content": "CSF",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250264": {
+      "content": "Gastroenteritis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250265": {
+      "content": "Oseltamivir",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250266": {
+      "content": "더마박터 호미니스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250267": {
+      "content": "연쇄상구균 플루라니말리움",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250268": {
+      "content": "Pseudomonas fragi",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250269": {
+      "content": "중간",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250270": {
+      "content": "테트라사이클린",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250271": {
+      "content": "MLSB 내성",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250272": {
+      "content": "Bacteroides uniformis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250273": {
+      "content": "Tedizolid",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250274": {
+      "content": "카바페넴 내성 장내세균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250275": {
+      "content": "Synovial fluid",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250276": {
+      "content": "판토이아 종",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250277": {
+      "content": "Liver abscess",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250278": {
+      "content": "연쇄상구균 페로리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250279": {
+      "content": "Salmonella Group D (Non-typhi)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250280": {
+      "content": "Weissella cibaria",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250281": {
+      "content": "미크로코쿠스 리래",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250282": {
+      "content": "Wound infection",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250283": {
+      "content": "장구균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250284": {
+      "content": "포도상구균 파스테우리",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250285": {
+      "content": "Endocarditis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250286": {
+      "content": "Gram staining",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250287": {
+      "content": "MALDI-TOF 동정",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250288": {
+      "content": "레지오넬라 폐렴",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250289": {
+      "content": "Lactobacillus paracasei",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250290": {
+      "content": "살모넬라 그룹 C",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250291": {
+      "content": "프레보텔라 속",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250292": {
+      "content": "라넬라 아쿠아틸리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250293": {
+      "content": "연쇄상구균 아갈락티에 (그룹 B)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250294": {
+      "content": "Sphingomonas paucimobilis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250295": {
+      "content": "Colistin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250296": {
+      "content": "세라티아 그리메시",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250297": {
+      "content": "Candida albicans",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250298": {
+      "content": "Candida glabrata",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250299": {
+      "content": "도로리사이클린",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250300": {
+      "content": "르클레르시아 아데카복실라타",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250301": {
+      "content": "Food poisoning",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250302": {
+      "content": "포도상구균 코니",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250303": {
+      "content": "Fusidic Acid",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250304": {
+      "content": "산욕기 감염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250305": {
+      "content": "세프트리악손(Other)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250306": {
+      "content": "Mycobacterium abscessus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250307": {
+      "content": "Pseudomonas rhodesiae",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250308": {
+      "content": "살모넬라 그룹 D (비티푸스)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250309": {
+      "content": "프로비덴시아 레트게리",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250310": {
+      "content": "네틸마이신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250311": {
+      "content": "Roseomonas gilardii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250312": {
+      "content": "티카실린",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250313": {
+      "content": "Slackia exigua",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250314": {
+      "content": "Cephalexin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250315": {
+      "content": "폰티악 열",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250316": {
+      "content": "길랭-바레 증후군",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250317": {
+      "content": "Paranasal sinusitis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250318": {
+      "content": "Paratyphoid fever",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250319": {
+      "content": "Gordonia rubripertincta",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250320": {
+      "content": "메티실린 내성 응고효소 음성 포도상구균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250321": {
+      "content": "Tracheal aspirate",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250322": {
+      "content": "림프절",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250323": {
+      "content": "흉수",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250324": {
+      "content": "와이셀라 비리데센스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250325": {
+      "content": "피부 병변",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250326": {
+      "content": "살모넬라감염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250327": {
+      "content": "엔테로코커스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250328": {
+      "content": "객담",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250329": {
+      "content": "아즈스로마이신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250330": {
+      "content": "연쇄상구균 루테티엔시스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250331": {
+      "content": "Legionellosis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250332": {
+      "content": "벤질페니실린(Meni)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250333": {
+      "content": "버크홀데리아 세노세파시아",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250334": {
+      "content": "악티노마이세스 종",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250335": {
+      "content": "Serratia plymuthica",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250336": {
+      "content": "바실러스 푸밀루스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250337": {
+      "content": "아목시실린/클라불란산",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250338": {
+      "content": "MLSB resistance",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250339": {
+      "content": "포도상구균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250340": {
+      "content": "Burkholderia diffusa",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250341": {
+      "content": "Streptococcus intermedius",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250342": {
+      "content": "락토바실러스 속",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250343": {
+      "content": "임질균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250344": {
+      "content": "Bacteroides fragilis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250345": {
+      "content": "CRE",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250346": {
+      "content": "브라키박테리움 콩글로메라툼",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250347": {
+      "content": "Necrotizing fasciitis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250348": {
+      "content": "슈도모나스 멘도시나",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250349": {
+      "content": "세페핌",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250350": {
+      "content": "Piperacillin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250351": {
+      "content": "니트로푸란토인",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250352": {
+      "content": "Netilmicin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250353": {
+      "content": "Streptococcus agalactiae (Group B)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250354": {
+      "content": "Tuberculous pleurisy",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250355": {
+      "content": "플루오로퀴놀론 내성",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250356": {
+      "content": "세파졸린",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250357": {
+      "content": "Streptococcus salivarius (viridans strep)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250358": {
+      "content": "Bacillus ruris",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250359": {
+      "content": "슈도모나스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250360": {
+      "content": "세라티아 루비데아",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250361": {
+      "content": "Serologic test",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250362": {
+      "content": "Ralstonia insidiosa",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250363": {
+      "content": "Streptomycin High Level (synergy)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250364": {
+      "content": "Teicoplanin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250365": {
+      "content": "MALDI-TOF identification",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250366": {
+      "content": "Listeria monocytogenes",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250367": {
+      "content": "C-reactive protein test",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250368": {
+      "content": "Meningitis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250369": {
+      "content": "Escherichia coli",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250370": {
+      "content": "슈도모나스 로데시아이",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250371": {
+      "content": "클렙시엘라 옥시토카",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250372": {
+      "content": "바실러스 섭틸리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250373": {
+      "content": "암피실린",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250374": {
+      "content": "맥립종",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250375": {
+      "content": "음성",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250376": {
+      "content": "Streptococcus sanguinis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250377": {
+      "content": "Acinetobacter lwoffii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250378": {
+      "content": "박테로이데스 테타이오타오미크론",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250379": {
+      "content": "Amphotericin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250380": {
+      "content": "Leclercia adecarboxylata",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250381": {
+      "content": "Viral PCR test",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250382": {
+      "content": "마이코박테리움 아비움 복합체",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250383": {
+      "content": "소변배양",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250384": {
+      "content": "Haemophilus influenzae",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250385": {
+      "content": "Ticarcillin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250386": {
+      "content": "VRE",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250387": {
+      "content": "Rothia aeria",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250388": {
+      "content": "황색포도알균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250389": {
+      "content": "항체검사",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250390": {
+      "content": "Clostridioides difficile",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250391": {
+      "content": "Acinetobacter baumannii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250392": {
+      "content": "브레비박테리움 파우시보란스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250393": {
+      "content": "퀴누프리스틴/달포프리스틴",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250394": {
+      "content": "내장기관 침범 감염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250395": {
+      "content": "포도상구균 페텐코페리",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250396": {
+      "content": "구강 도말",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250397": {
+      "content": "바실러스 모자벤시스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250398": {
+      "content": "뮤피로신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250399": {
+      "content": "파라박테로이데스 디스타소니스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250400": {
+      "content": "Voriconazole",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250401": {
+      "content": "사이버린드네라 파비아니아이",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250402": {
+      "content": "Streptococcus oralis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250403": {
+      "content": "복수",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250404": {
+      "content": "Candida parapsilosis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250405": {
+      "content": "Osteomyelitis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250406": {
+      "content": "연조직염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250407": {
+      "content": "에리트로마이신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250408": {
+      "content": "Trimethoprim",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250409": {
+      "content": "Pseudomonas koreensis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250410": {
+      "content": "Ceftazidime-Avibactam",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250411": {
+      "content": "Rhizobium radiobacter",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250412": {
+      "content": "복강 내 감염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250413": {
+      "content": "Antibiotic susceptibility test",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250414": {
+      "content": "Pseudomonas monteilii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250415": {
+      "content": "Clindamycin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250416": {
+      "content": "아크로모박터 자일로소시단스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250417": {
+      "content": "Serratia grimesii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250418": {
+      "content": "Eggerthella lenta",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250419": {
+      "content": "고르도니아 루브리퍼틴크타",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250420": {
+      "content": "Cefazolin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250421": {
+      "content": "세프트로졸란/타조박탐",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250422": {
+      "content": "클로스트리디움 디피실리",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250423": {
+      "content": "Candida krusei",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250424": {
+      "content": "클로스트리디움 스포로제네스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250425": {
+      "content": "Candida tropicalis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250426": {
+      "content": "겐타마이신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250427": {
+      "content": "Colistin resistance",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250428": {
+      "content": "Proteus mirabilis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250429": {
+      "content": "Ventriculitis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250430": {
+      "content": "결핵균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250431": {
+      "content": "버크홀데리아 라타",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250432": {
+      "content": "Piperacillin/Tazobactam",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250433": {
+      "content": "Urine",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250434": {
+      "content": "Gas gangrene",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250435": {
+      "content": "Clostridium septicum",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250436": {
+      "content": "인플루엔자",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250437": {
+      "content": "백일해균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250438": {
+      "content": "Mycoplasma pneumoniae",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250439": {
+      "content": "Candida auris",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250440": {
+      "content": "Lymph node",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250441": {
+      "content": "항원검사",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250442": {
+      "content": "칸디다증",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250443": {
+      "content": "Paenibacillus polymyxa",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250444": {
+      "content": "테이코플라닌",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250445": {
+      "content": "위막성 대장염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250446": {
+      "content": "Streptococcus anginosus group",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250447": {
+      "content": "아시네토박터",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250448": {
+      "content": "Pseudomonas stutzeri",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250449": {
+      "content": "결절성 홍반",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250450": {
+      "content": "Procalcitonin test",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250451": {
+      "content": "칸디다 트로피칼리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250452": {
+      "content": "아즈트레오남",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250453": {
+      "content": "Oral swab",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250454": {
+      "content": "파이퍼라실린/타조박탐",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250455": {
+      "content": "슈도모나스 과리코네시스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250456": {
+      "content": "프로테우스 하우세리",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250457": {
+      "content": "농흉",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250458": {
+      "content": "균혈증",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250459": {
+      "content": "Staphylococcus hominis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250460": {
+      "content": "세푸록심",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250461": {
+      "content": "Aspergillus spp.",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250462": {
+      "content": "Brevibacterium paucivorans",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250463": {
+      "content": "스핑고박테리움 탈포필룸",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250464": {
+      "content": "에어로모나스 종",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250465": {
+      "content": "칸디다 오르소실로시스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250466": {
+      "content": "Staphylococcus lentus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250467": {
+      "content": "Cefotaxime",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250468": {
+      "content": "Nitrofurantoin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250469": {
+      "content": "다제내성 녹농균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250470": {
+      "content": "Candida",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250471": {
+      "content": "Guillain-Barre syndrome",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250472": {
+      "content": "아스페르길루스 푸미가투스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250473": {
+      "content": "Caspofungin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250474": {
+      "content": "스트렙토마이신 하이 레벨",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250475": {
+      "content": "복막염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250476": {
+      "content": "항생제 감수성 검사",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250477": {
+      "content": "Pseudomonas libanensis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250478": {
+      "content": "포도상구균 코니 (ss. 유레알리티쿠스)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250479": {
+      "content": "프로테우스 미라빌리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250480": {
+      "content": "Metronidazole",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250481": {
+      "content": "텔리트로마이신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250482": {
+      "content": "버크홀데리아 디푸사",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250483": {
+      "content": "Amphotericin B",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250484": {
+      "content": "예르시니아 엔테로콜리티카",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250485": {
+      "content": "Ceftolozane-Tazobactam",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250486": {
+      "content": "Serratia rubidaea",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250487": {
+      "content": "비브리오 파라헤몰리티쿠스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250488": {
+      "content": "스트렙토코커스 앙기노수스 그룹",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250489": {
+      "content": "뇌농양",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250490": {
+      "content": "Influenza",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250491": {
+      "content": "엔테로박테리아과(CRE)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250492": {
+      "content": "연쇄상구균 살리바리우스 (비리단스 그룹)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250493": {
+      "content": "메탈로-β-락타마제 생성균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250494": {
+      "content": "Daptomycin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250495": {
+      "content": "피부연조직감염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250496": {
+      "content": "세프트리악손(Meni)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250497": {
+      "content": "스트렙토코커스 보비스 그룹",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250498": {
+      "content": "엔테로박터 에어로게네스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250499": {
+      "content": "결막염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250500": {
+      "content": "백일해",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250501": {
+      "content": "신생아 패혈증",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250502": {
+      "content": "페디오코쿠스 에시디락티시",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250503": {
+      "content": "Pseudomonas synxantha",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250504": {
+      "content": "Candida species, not albicans",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250505": {
+      "content": "Bacillus atrophaeus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250506": {
+      "content": "Sputum",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250507": {
+      "content": "Enterococcus faecalis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250508": {
+      "content": "Amikacin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250509": {
+      "content": "CRP 검사",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250510": {
+      "content": "Bordetella pertussis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250511": {
+      "content": "Treponema pallidum",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250512": {
+      "content": "모락셀라 카타랄리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250513": {
+      "content": "Streptococcus pyogenes (Group A)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250514": {
+      "content": "Meropenem",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250515": {
+      "content": "슈도모나스 몬테일리",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250516": {
+      "content": "Klebsiella pneumoniae",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250517": {
+      "content": "Aeromonas spp.",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250518": {
+      "content": "Ceftaroline",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250519": {
+      "content": "빌로필라 와즈워시아",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250520": {
+      "content": "Coagulase negative staphylococcus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250521": {
+      "content": "Doxycycline",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250522": {
+      "content": "미노사이클린",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250523": {
+      "content": "코리네박테리움 스트리아툼",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250524": {
+      "content": "Parabacteroides distasonis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250525": {
+      "content": "Penicillin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250526": {
+      "content": "다제내성 아시네토박터",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250527": {
+      "content": "마이크로박테리움 아르보레센스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250528": {
+      "content": "Vancomycin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250529": {
+      "content": "클로람페니콜",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250530": {
+      "content": "Rothia mucilaginosa",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250531": {
+      "content": "Telavancin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250532": {
+      "content": "Cefixime",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250533": {
+      "content": "Clostridium perfringens",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250534": {
+      "content": "메트로니다졸",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250535": {
+      "content": "Tazobactam",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250536": {
+      "content": "Nontuberculous mycobacterium (NTM)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250537": {
+      "content": "Streptococcus agalactiae",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250538": {
+      "content": "마이로이데스 인제넨시스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250539": {
+      "content": "Streptococcus canis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250540": {
+      "content": "Staphylococcus pseudintermedius",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250541": {
+      "content": "Pediococcus acidilactici",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250542": {
+      "content": "심낭액",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250543": {
+      "content": "캄필로박터 감염증",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250544": {
+      "content": "플루시토신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250545": {
+      "content": "Vibrio cholerae",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250546": {
+      "content": "포도상구균 아우리쿨라리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250547": {
+      "content": "Streptococcus bovis group",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250548": {
+      "content": "Bloodstream Infection",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250549": {
+      "content": "Candidiasis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250550": {
+      "content": "노플록사신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250551": {
+      "content": "Sepsis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250552": {
+      "content": "Serratia nematodiphila",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250553": {
+      "content": "Intraabdominal infection",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250554": {
+      "content": "요석 형성",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250555": {
+      "content": "나이세리아 서브플라바균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250556": {
+      "content": "Cefuroxime",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250557": {
+      "content": "Saccharomyces cerevisiae",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250558": {
+      "content": "Benzylpenicillin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250559": {
+      "content": "Polymyxin B",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250560": {
+      "content": "Ceftriaxone",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250561": {
+      "content": "Trimethoprim/Sulfamethoxazole",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250562": {
+      "content": "세라티아 마르세센스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250563": {
+      "content": "알비칸스 종이 아닌 칸디다균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250564": {
+      "content": "Massilia species",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250565": {
+      "content": "소변",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250566": {
+      "content": "오셀타미비르",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250567": {
+      "content": "비강 도말",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250568": {
+      "content": "부비동염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250569": {
+      "content": "Rifampicin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250570": {
+      "content": "16S rRNA sequencing",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250571": {
+      "content": "Loop-mediated isothermal amplification",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250572": {
+      "content": "PCR test",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250573": {
+      "content": "수막염균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250574": {
+      "content": "Clostridium sporogenes",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250575": {
+      "content": "Quinupristin/Dalfopristin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250576": {
+      "content": "버크홀데리아 세파시아",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250577": {
+      "content": "리스테리아증",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250578": {
+      "content": "Citrobacter koseri (diversus)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250579": {
+      "content": "Streptococcus parasanguinis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250580": {
+      "content": "Streptococcus vestibularis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250581": {
+      "content": "슈도모나스 스투처리",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250582": {
+      "content": "연쇄상구균 콘스텔라투스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250583": {
+      "content": "Bacteroides cellulosilyticus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250584": {
+      "content": "살모넬라 혈청형 파라티푸스 B",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250585": {
+      "content": "Reactive arthritis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250586": {
+      "content": "피페라실린/타조박탐",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250587": {
+      "content": "Serratia marcescens",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250588": {
+      "content": "Pyoderma",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250589": {
+      "content": "Staphylococcus xylosus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250590": {
+      "content": "스트렙토코커스 미티스 그룹",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250591": {
+      "content": "Pseudomonas plecoglossicida",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250592": {
+      "content": "푸시딘산",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250593": {
+      "content": "슈도모나스 클로로라피스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250594": {
+      "content": "포스포마이신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250595": {
+      "content": "Imipenem",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250596": {
+      "content": "Streptococcus oralis/mitis group",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250597": {
+      "content": "Ampicillin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250598": {
+      "content": "광범위 베타락탐계 분해효소",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250599": {
+      "content": "Shigella",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250600": {
+      "content": "칸디다 글라브라타",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250601": {
+      "content": "Bifidobacterium longum",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250602": {
+      "content": "Streptococcus thermophilus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250603": {
+      "content": "비정형 결핵균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250604": {
+      "content": "Erythromycin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250605": {
+      "content": "로티아 뮤실라기노사",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250606": {
+      "content": "Gardberella vaginitis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250607": {
+      "content": "Streptococcus peroris",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250608": {
+      "content": "Pyothorax",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250609": {
+      "content": "포도상구균 자일로수스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250610": {
+      "content": "Flucytosine",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250611": {
+      "content": "아스페르길루스 니거",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250612": {
+      "content": "Aztreonam",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250613": {
+      "content": "Streptococcus bovis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250614": {
+      "content": "Ceftriaxone (Meni)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250615": {
+      "content": "결핵성 흉막염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250616": {
+      "content": "항생제 유발 장염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250617": {
+      "content": "Neisseria meningitidis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250618": {
+      "content": "연쇄상구균 베스티불라리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250619": {
+      "content": "Benzylpenicillin (Other)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250620": {
+      "content": "Antibiotic-associated diarrhea (AAD)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250621": {
+      "content": "세포탁심(Meni)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250622": {
+      "content": "Spectinomycin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250623": {
+      "content": "스핑고박테리움 멀티보럼",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250624": {
+      "content": "Pseudomonas mosselii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250625": {
+      "content": "Ear swab",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250626": {
+      "content": "그람 양성 간균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250627": {
+      "content": "박테로이데스 유니포르미스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250628": {
+      "content": "포도상구균 워너리",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250629": {
+      "content": "매독",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250630": {
+      "content": "Streptococcus gallolyticus ssp gallolyticus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250631": {
+      "content": "혈청학적 검사",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250632": {
+      "content": "간농양",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250633": {
+      "content": "혈액배양",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250634": {
+      "content": "Roseomonas mucosa",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250635": {
+      "content": "방선균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250636": {
+      "content": "Staphylococcus sciuri",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250637": {
+      "content": "대장 천공",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250638": {
+      "content": "기관지 흡인물",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250639": {
+      "content": "사카로마이세스균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250640": {
+      "content": "세포탁심(Other)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250641": {
+      "content": "Telithromycin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250642": {
+      "content": "토브라마이신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250643": {
+      "content": "Staphylococcus cohnii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250644": {
+      "content": "연쇄상구균 파이오제네스 (그룹 A)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250645": {
+      "content": "프레보텔라 헤파리놀리티카",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250646": {
+      "content": "양성",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250647": {
+      "content": "Bifidobacterium adolescentis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250648": {
+      "content": "Streptococcus infantis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250649": {
+      "content": "Moxifloxacin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250650": {
+      "content": "브루셀라 멜리텐시스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250651": {
+      "content": "세프타지딤/아비박탐",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250652": {
+      "content": "Campylobacteriosis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250653": {
+      "content": "메티실린 내성 응고 효소 음성 포도알균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250654": {
+      "content": "모락셀라 속",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250655": {
+      "content": "리네졸리드",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250656": {
+      "content": "혈류감염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250657": {
+      "content": "바이러스 PCR",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250658": {
+      "content": "와이셀라 시바리아",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250659": {
+      "content": "연쇄상구균 미티스 (비리단스 그룹)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250660": {
+      "content": "농가진",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250661": {
+      "content": "스트렙토코커스 오랄리스/미티스 그룹",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250662": {
+      "content": "포도상구균 크로모제네스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250663": {
+      "content": "Hemolytic uremic syndrome",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250664": {
+      "content": "요로감염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250665": {
+      "content": "Micrococcus lylae",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250666": {
+      "content": "Rectal swab",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250667": {
+      "content": "버크홀데리아 비에트나미엔시스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250668": {
+      "content": "스테노트로포모나스 말토필리아",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250669": {
+      "content": "반코마이신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250670": {
+      "content": "바실러스 소노렌시스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250671": {
+      "content": "Micrococcus species",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250672": {
+      "content": "수두",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250673": {
+      "content": "Dalfopristin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250674": {
+      "content": "MRPA",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250675": {
+      "content": "락토바실러스 살리바리우스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250676": {
+      "content": "Granulicatella adiacens",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250677": {
+      "content": "중이염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250678": {
+      "content": "클린다마이신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250679": {
+      "content": "콜리스틴",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250680": {
+      "content": "Skin and soft tissue infection",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250681": {
+      "content": "Cryptococcus neoformans",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250682": {
+      "content": "Bacteremia",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250683": {
+      "content": "트리메토프림",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250684": {
+      "content": "Legionella pneumonia",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250685": {
+      "content": "Lactobacillus species",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250686": {
+      "content": "Stenotrophomonas maltophilia",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250687": {
+      "content": "Enterococcus casseliflavus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250688": {
+      "content": "Microbacterium arborescens",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250689": {
+      "content": "Acinetobacter calcoaceticus-baumannii complex",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250690": {
+      "content": "모낭염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250691": {
+      "content": "Globicatella sanguinis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250692": {
+      "content": "타이게사이클린",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250693": {
+      "content": "식중독",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250694": {
+      "content": "Bacillus sonorensis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250695": {
+      "content": "수막염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250696": {
+      "content": "Cefoxitin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250697": {
+      "content": "연쇄상구균 보비스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250698": {
+      "content": "Phlegmom",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250699": {
+      "content": "반코마이신 중간내성 황색포도알균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250700": {
+      "content": "Prevotella heparinolytica",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250701": {
+      "content": "Methicillin 내성 Coagulase negative staphylococcus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250702": {
+      "content": "Rhodotorula mucilaginosa",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250703": {
+      "content": "스핑고모나스 포시모빌리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250704": {
+      "content": "Pneumonia",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250705": {
+      "content": "Enterobacter aerogenes",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250706": {
+      "content": "난관염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250707": {
+      "content": "Hordeolum",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250708": {
+      "content": "그라눌리카텔라 아디아센스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250709": {
+      "content": "연쇄상구균 파라상구이니스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250710": {
+      "content": "Enterococcus faecium",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250711": {
+      "content": "Bacillus pumilus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250712": {
+      "content": "클라불란산",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250713": {
+      "content": "Sphingobacterium multivorum",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250714": {
+      "content": "모르가넬라 모르가니",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250715": {
+      "content": "락토바실루스 파라카세이",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250716": {
+      "content": "Lactobacillus casei",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250717": {
+      "content": "Sphingobacterium spiritivorum",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250718": {
+      "content": "Lactobacillus salivarius",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250719": {
+      "content": "Corynebacterium striatum",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250720": {
+      "content": "Citrobacter freundii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250721": {
+      "content": "세프타로린",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250722": {
+      "content": "박테로이데스 프라질리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250723": {
+      "content": "모락셀라 오슬로엔시스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250724": {
+      "content": "마이크로코커스균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250725": {
+      "content": "Enterobacteriaceae",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250726": {
+      "content": "반코마이신 내성 황색포도알균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250727": {
+      "content": "Streptococcus constellatus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250728": {
+      "content": "Gentamicin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250729": {
+      "content": "Aspergillus niger",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250730": {
+      "content": "포도상구균 시뮬란스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250731": {
+      "content": "Neisseria gonorrhoeae",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250732": {
+      "content": "박테로이데스 셀룰로실리티쿠스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250733": {
+      "content": "콜리스틴 내성",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250734": {
+      "content": "Pseudomonas otitidis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250735": {
+      "content": "Visceral infection",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250736": {
+      "content": "살모넬라 그룹 D",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250737": {
+      "content": "연쇄상구균 갈로리티쿠스 아종 갈로리티쿠스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250738": {
+      "content": "Mycobacterium avium complex",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250739": {
+      "content": "크립토코쿠스 네오포르만스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250740": {
+      "content": "Bacillus weihenstephanensis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250741": {
+      "content": "Actinomyces neuii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250742": {
+      "content": "바실루스 속",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250743": {
+      "content": "Pseudomonas guariconensis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250744": {
+      "content": "로시아 아에리아",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250745": {
+      "content": "달포프리스틴",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250746": {
+      "content": "타조박탐",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250747": {
+      "content": "시프로플록사신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250748": {
+      "content": "가스괴저균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250749": {
+      "content": "Legionella pneumophila",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250750": {
+      "content": "Pleural fluid",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250751": {
+      "content": "Blood",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250752": {
+      "content": "방광염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250753": {
+      "content": "창상감염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250754": {
+      "content": "Staphylococcus warneri",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250755": {
+      "content": "골수염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250756": {
+      "content": "Syphilis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250757": {
+      "content": "플라조마이신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250758": {
+      "content": "Shigellosis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250759": {
+      "content": "Eravacycline",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250760": {
+      "content": "Ceftriaxone (Other)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250761": {
+      "content": "로제오모나스 무코사",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250762": {
+      "content": "Habekacin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250763": {
+      "content": "Klebsiella oxytoca",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250764": {
+      "content": "연쇄상구균 상구이니스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250765": {
+      "content": "Staphylococcus saprophyticus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250766": {
+      "content": "Erythema Nodosum",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250767": {
+      "content": "Trichosporon asahii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250768": {
+      "content": "결핵",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250769": {
+      "content": "Sphingobacterium thalpophilum",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250770": {
+      "content": "Antibiotic-associated hemorrhagic colitis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250771": {
+      "content": "슈도모나스 리바넨시스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250772": {
+      "content": "목시플록사신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250773": {
+      "content": "Impetigo",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250774": {
+      "content": "Pseudomembranous colitis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250775": {
+      "content": "Antibody test",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250776": {
+      "content": "바실러스 루리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250777": {
+      "content": "농피증",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250778": {
+      "content": "VISA",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250779": {
+      "content": "Pseudomonas mendocina",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250780": {
+      "content": "리스테리아 모노사이토제네스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250781": {
+      "content": "Moraxella sp",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250782": {
+      "content": "Staphylococcus simulans",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250783": {
+      "content": "Pseudomonas fluorescens",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250784": {
+      "content": "Candida orthopsilosis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250785": {
+      "content": "그람염색",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250786": {
+      "content": "Streptococcus gordonii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250787": {
+      "content": "Mycobacterium tuberculosis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250788": {
+      "content": "Bacillus subtilis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250789": {
+      "content": "관절액",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250790": {
+      "content": "Sputum culture",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250791": {
+      "content": "직장 도말",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250792": {
+      "content": "바실루스 리케니포르미스균",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250793": {
+      "content": "Rhodococcus coprophilus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250794": {
+      "content": "Pseudomonas chlororaphis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250795": {
+      "content": "슈도모나스 푸티다",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250796": {
+      "content": "Bacillus licheniformis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250797": {
+      "content": "아스페르길루스 속",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250798": {
+      "content": "브레비박테리움 라벤스푸르겐세",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250799": {
+      "content": "Mupirocin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250800": {
+      "content": "Tobramycin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250801": {
+      "content": "세균성 질염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250802": {
+      "content": "Cefepime",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250803": {
+      "content": "레지오넬라증",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250804": {
+      "content": "Salmonella Group C",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250805": {
+      "content": "프로칼시토닌 검사",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250806": {
+      "content": "세포탁심",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250807": {
+      "content": "티카실린/클라불란산",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250808": {
+      "content": "연쇄상구균 인판티스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250809": {
+      "content": "도리페넴",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250810": {
+      "content": "설사",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250811": {
+      "content": "Prevotella spp.",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250812": {
+      "content": "락토바실러스 카세이",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250813": {
+      "content": "Fusarium spp.",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250814": {
+      "content": "Penicillium species",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250815": {
+      "content": "로도토룰라 뮤실라기노사",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250816": {
+      "content": "Moraxella catarrhalis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250817": {
+      "content": "Weissella viridescens",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250818": {
+      "content": "브라나멜라 카타랄리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250819": {
+      "content": "Salmonella",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250820": {
+      "content": "Clavulanic Acid",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250821": {
+      "content": "Puerperal infection",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250822": {
+      "content": "결합조직염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250823": {
+      "content": "Minocycline",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250824": {
+      "content": "Dermabacter hominis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250825": {
+      "content": "심내막염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250826": {
+      "content": "겐타마이신 하이 레벨",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250827": {
+      "content": "연쇄상구균 크리스타투스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250828": {
+      "content": "Fluconazole",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250829": {
+      "content": "세팔렉신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250830": {
+      "content": "락토바실러스 말레퍼멘탄스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250831": {
+      "content": "Ascites",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250832": {
+      "content": "Serratia odorifera",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250833": {
+      "content": "뇌실염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250834": {
+      "content": "Plazomicin",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250835": {
+      "content": "Cefpodoxime",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250836": {
+      "content": "연쇄상구균 에퀴시밀리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250837": {
+      "content": "Staphylococcus cohnii ss. urealyticus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250838": {
+      "content": "스트렙토코커스 테르모필루스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250839": {
+      "content": "Staphylococcus aureus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250840": {
+      "content": "Gram (+) Rods",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250841": {
+      "content": "에게르텔라 렌타",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250842": {
+      "content": "Myroides injenensis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250843": {
+      "content": "PCR 검사",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250844": {
+      "content": "Otitis media",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250845": {
+      "content": "칸디다 크루세이",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250846": {
+      "content": "슈도모나스 니트로레두센스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250847": {
+      "content": "Diarrhea",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250848": {
+      "content": "바실러스 세레우스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250849": {
+      "content": "신우신염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250850": {
+      "content": "Kidney stone formation",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250851": {
+      "content": "Aspergillus flavus",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250852": {
+      "content": "연쇄상구균 오랄리스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250853": {
+      "content": "클로스트리디움 셉티쿰",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250854": {
+      "content": "슈도모나스 모셀리",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250855": {
+      "content": "Ertapenem",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250856": {
+      "content": "리팜피신",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250857": {
+      "content": "Linezolid",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250858": {
+      "content": "포도상구균 렌투스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250859": {
+      "content": "Salmonella ser. paratyphi B",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250860": {
+      "content": "Salmonellosis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250861": {
+      "content": "위장관염",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250862": {
+      "content": "Antigen test",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250863": {
+      "content": "포도상구균 슈도인터미디우스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250864": {
+      "content": "벤질페니실린(Oral)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250865": {
+      "content": "16S rRNA 분석",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250866": {
+      "content": "쉬와넬라 푸트레파센스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250867": {
+      "content": "MRAB",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250868": {
+      "content": "연쇄상구균 인터메디우스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250869": {
+      "content": "Cefotaxime (Meni)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250870": {
+      "content": "Streptococcus lutetiensis",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250871": {
+      "content": "Proteus hauseri",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250872": {
+      "content": "포도상구균 사프로피티쿠스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250873": {
+      "content": "Morganella morganii",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250874": {
+      "content": "칸디다 알비칸스",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    },
+    "250875": {
+      "content": "연쇄상구균 뮤탄스 (비리단스 그룹)",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": true,
+      "special": false
+    }
+  },
+  "bos_token": "<s>",
+  "clean_up_tokenization_spaces": true,
+  "cls_token": "<s>",
+  "eos_token": "</s>",
+  "extra_special_tokens": {},
+  "mask_token": "<mask>",
+  "max_length": 512,
+  "model_max_length": 512,
+  "pad_token": "<pad>",
+  "sep_token": "</s>",
+  "stride": 0,
+  "tokenizer_class": "XLMRobertaTokenizerFast",
+  "truncation_side": "right",
+  "truncation_strategy": "longest_first",
+  "unk_token": "<unk>"
+}

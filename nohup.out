@@ -1,0 +1,333 @@
+Setting TNS_ADMIN and starting NER Pipeline API Server...
+<<<<< LOADING NEW DATABASE.PY - THICK MODE ENABLED >>>>>
+/home/opc/venv/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+INFO:     Started server process [103518]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-07-16 01:39:44 - INFO - Received pipeline request: {'source_table': '12_example', 'processed_table': 'PROCESSED_DATA_12', 'antibiotic_table': 'ANTIBIOTICS_DATA_12', 'failed_table': 'FAILED_REPORTS_12'}
+INFO:     112.219.113.186:2092 - "POST /run-pipeline/ HTTP/1.1" 202 Accepted
+2025-07-16 01:39:46 - INFO - ======= PIPELINE START for source table: 12_example =======
+2025-07-16 01:39:49 - INFO - Using provided connection to fetch from table: 12_example
+2025-07-16 01:39:49 - INFO - Executing query to fetch source data...
+/home/opc/ner_project/database.py:30: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, connection)
+2025-07-16 01:39:57 - INFO - Fetched 20 rows from the source database.
+2025-07-16 01:39:57 - INFO - Starting dataframe processing...
+Device set to use cpu
+2025-07-16 01:41:50 - INFO - Local NER model loaded from '/home/opc/ner_project/final-korean-ner-model-optimized_v2'.
+DataFrame Processing:   0%|          | 0/20 [00:00<?, ?it/s]DataFrame Processing:   5%|▌         | 1/20 [00:03<01:00,  3.16s/it]DataFrame Processing:  15%|█▌        | 3/20 [00:03<00:14,  1.15it/s]DataFrame Processing:  30%|███       | 6/20 [00:03<00:05,  2.75it/s]DataFrame Processing:  30%|███       | 6/20 [00:20<00:05,  2.75it/s]DataFrame Processing:  40%|████      | 8/20 [00:20<00:40,  3.39s/it]DataFrame Processing:  45%|████▌     | 9/20 [00:21<00:30,  2.80s/it]DataFrame Processing:  60%|██████    | 12/20 [00:21<00:12,  1.50s/it]DataFrame Processing:  70%|███████   | 14/20 [00:40<00:23,  3.94s/it]DataFrame Processing:  80%|████████  | 16/20 [00:58<00:22,  5.52s/it]DataFrame Processing:  85%|████████▌ | 17/20 [01:14<00:22,  7.39s/it]DataFrame Processing:  90%|█████████ | 18/20 [01:14<00:11,  5.96s/it]DataFrame Processing: 100%|██████████| 20/20 [01:30<00:00,  6.77s/it]DataFrame Processing: 100%|██████████| 20/20 [01:30<00:00,  4.55s/it]
+2025-07-16 01:43:22 - INFO - DataFrame processing finished.
+2025-07-16 01:44:28 - INFO - Connecting to ADW to load data...
+2025-07-16 01:44:37 - INFO - Successfully established connection to ADW.
+2025-07-16 01:44:37 - INFO - Loading 20 rows into ADW table: PROCESSED_DATA_12 (manual insert)
+2025-07-16 01:44:38 - INFO - Table 'PROCESSED_DATA_12' did not exist or could not be dropped: ORA-00942: table or view "ADMIN"."PROCESSED_DATA_12" does not exist
+2025-07-16 01:44:38 - INFO - Created table 'PROCESSED_DATA_12' with CLOB columns.
+2025-07-16 01:44:39 - INFO - Successfully inserted 20 rows into PROCESSED_DATA_12.
+2025-07-16 01:44:39 - INFO - Loading 61 rows into ADW table: ANTIBIOTICS_DATA_12 (manual insert)
+2025-07-16 01:44:39 - INFO - Table 'ANTIBIOTICS_DATA_12' did not exist or could not be dropped: ORA-00942: table or view "ADMIN"."ANTIBIOTICS_DATA_12" does not exist
+2025-07-16 01:44:39 - INFO - Created table 'ANTIBIOTICS_DATA_12' with CLOB columns.
+2025-07-16 01:44:40 - INFO - Successfully inserted 61 rows into ANTIBIOTICS_DATA_12.
+2025-07-16 01:44:40 - INFO - No data to load into 'FAILED_REPORTS_12'. Skipping.
+2025-07-16 01:44:40 - INFO - ADW connection closed.
+2025-07-16 01:44:40 - INFO - Source DB connection closed.
+2025-07-16 01:44:40 - INFO - ======= PIPELINE FINISHED for target tables: PROCESSED_DATA_12, ANTIBIOTICS_DATA_12, FAILED_REPORTS_12 =======
+2025-07-16 01:58:30 - INFO - Received pipeline request: {'source_table': '12_example', 'processed_table': 'PROCESSED_DATA_12', 'antibiotic_table': 'ANTIBIOTICS_DATA_12', 'failed_table': 'FAILED_REPORTS_12'}
+INFO:     112.219.113.186:2093 - "POST /run-pipeline/ HTTP/1.1" 202 Accepted
+2025-07-16 01:58:30 - INFO - ======= PIPELINE START for source table: 12_example =======
+2025-07-16 01:58:31 - INFO - Using provided connection to fetch from table: 12_example
+2025-07-16 01:58:31 - INFO - Executing query to fetch source data...
+/home/opc/ner_project/database.py:30: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, connection)
+2025-07-16 01:58:32 - INFO - Fetched 20 rows from the source database.
+2025-07-16 01:58:32 - INFO - Starting dataframe processing...
+Device set to use cpu
+2025-07-16 02:00:35 - INFO - Local NER model loaded from '/home/opc/ner_project/final-korean-ner-model-optimized_v2'.
+DataFrame Processing:   0%|          | 0/20 [00:00<?, ?it/s]DataFrame Processing:   5%|▌         | 1/20 [00:01<00:27,  1.47s/it]DataFrame Processing:  20%|██        | 4/20 [00:01<00:05,  3.19it/s]DataFrame Processing:  35%|███▌      | 7/20 [00:01<00:02,  5.92it/s]DataFrame Processing:  45%|████▌     | 9/20 [00:18<00:32,  2.92s/it]DataFrame Processing:  50%|█████     | 10/20 [00:18<00:23,  2.38s/it]DataFrame Processing:  50%|█████     | 10/20 [00:29<00:23,  2.38s/it]DataFrame Processing:  65%|██████▌   | 13/20 [00:41<00:33,  4.72s/it]DataFrame Processing:  70%|███████   | 14/20 [00:41<00:23,  3.97s/it]DataFrame Processing:  80%|████████  | 16/20 [01:00<00:23,  5.75s/it]DataFrame Processing:  85%|████████▌ | 17/20 [01:13<00:21,  7.27s/it]DataFrame Processing:  90%|█████████ | 18/20 [01:14<00:11,  5.79s/it]DataFrame Processing: 100%|██████████| 20/20 [01:30<00:00,  6.63s/it]DataFrame Processing: 100%|██████████| 20/20 [01:30<00:00,  4.51s/it]
+2025-07-16 02:02:06 - INFO - DataFrame processing finished.
+2025-07-16 02:06:23 - INFO - Connecting to ADW to load data...
+2025-07-16 02:06:31 - INFO - Successfully established connection to ADW.
+2025-07-16 02:06:31 - INFO - Loading 20 rows into ADW table: PROCESSED_DATA_12 (manual insert)
+2025-07-16 02:06:31 - INFO - Table 'PROCESSED_DATA_12' did not exist or could not be dropped: ORA-00942: table or view "ADMIN"."PROCESSED_DATA_12" does not exist
+2025-07-16 02:06:31 - INFO - Created table 'PROCESSED_DATA_12' with CLOB columns.
+2025-07-16 02:06:34 - INFO - Successfully inserted 20 rows into PROCESSED_DATA_12.
+2025-07-16 02:06:34 - INFO - Loading 61 rows into ADW table: ANTIBIOTICS_DATA_12 (manual insert)
+2025-07-16 02:06:34 - INFO - Table 'ANTIBIOTICS_DATA_12' did not exist or could not be dropped: ORA-00942: table or view "ADMIN"."ANTIBIOTICS_DATA_12" does not exist
+2025-07-16 02:06:34 - INFO - Created table 'ANTIBIOTICS_DATA_12' with CLOB columns.
+2025-07-16 02:06:34 - INFO - Successfully inserted 61 rows into ANTIBIOTICS_DATA_12.
+2025-07-16 02:06:34 - INFO - No data to load into 'FAILED_REPORTS_12'. Skipping.
+2025-07-16 02:06:34 - INFO - ADW connection closed.
+2025-07-16 02:06:34 - INFO - Source DB connection closed.
+2025-07-16 02:06:34 - INFO - ======= PIPELINE FINISHED for target tables: PROCESSED_DATA_12, ANTIBIOTICS_DATA_12, FAILED_REPORTS_12 =======
+INFO:     205.210.31.20:62038 - "GET / HTTP/1.1" 200 OK
+INFO:     147.185.132.117:58300 - "GET / HTTP/1.1" 200 OK
+INFO:     216.218.206.68:40884 - "GET / HTTP/1.1" 200 OK
+INFO:     216.218.206.88:13561 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     216.218.206.80:4157 - "GET /?format=json HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     180.149.125.166:8121 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     205.210.31.217:62954 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     8.222.153.7:51352 - "GET / HTTP/1.1" 200 OK
+INFO:     8.222.153.7:51366 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     123.160.223.73:6034 - "GET / HTTP/1.1" 200 OK
+INFO:     123.160.223.73:6049 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     123.58.209.243:42138 - "GET /api/v2/heartbeat HTTP/1.1" 404 Not Found
+INFO:     123.58.209.243:42438 - "GET / HTTP/1.1" 200 OK
+INFO:     35.237.4.214:54112 - "GET /run-pipeline/%22 HTTP/1.1" 404 Not Found
+INFO:     211.114.77.179:58810 - "GET /run-pipeline/ HTTP/1.1" 405 Method Not Allowed
+INFO:     211.114.77.179:58810 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     112.219.113.186:2094 - "POST /run-pipeline/ HTTP/1.1" 422 Unprocessable Entity
+INFO:     112.219.113.186:2095 - "POST /run-pipeline/ HTTP/1.1" 422 Unprocessable Entity
+INFO:     112.219.113.186:2096 - "POST /run-pipeline/ HTTP/1.1" 422 Unprocessable Entity
+INFO:     112.219.113.186:2097 - "POST /run-pipeline/ HTTP/1.1" 422 Unprocessable Entity
+INFO:     112.219.113.186:2098 - "POST /run-pipeline/ HTTP/1.1" 422 Unprocessable Entity
+INFO:     112.219.113.186:2099 - "POST /run-pipeline/ HTTP/1.1" 422 Unprocessable Entity
+2025-07-17 00:19:34 - INFO - Received pipeline request: {'source_table': '12_example', 'processed_table': 'PROCESSED_DATA_12', 'antibiotic_table': 'ANTIBIOTICS_DATA_12', 'failed_table': 'FAILED_REPORTS_12'}
+INFO:     112.219.113.186:2100 - "POST /run-pipeline/ HTTP/1.1" 202 Accepted
+2025-07-17 00:19:36 - INFO - ======= PIPELINE START for source table: 12_example =======
+2025-07-17 00:19:42 - INFO - Using provided connection to fetch from table: 12_example
+2025-07-17 00:19:42 - INFO - Executing query to fetch source data...
+/home/opc/ner_project/database.py:30: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, connection)
+INFO:     35.227.62.178:44694 - "GET /run-pipeline/%22 HTTP/1.1" 404 Not Found
+2025-07-17 00:20:02 - INFO - Fetched 20 rows from the source database.
+2025-07-17 00:20:03 - INFO - Starting dataframe processing...
+2025-07-17 00:20:18 - INFO - Received pipeline request: {'source_table': '12_example', 'processed_table': 'PROCESSED_DATA_12', 'antibiotic_table': 'ANTIBIOTICS_DATA_12', 'failed_table': 'FAILED_REPORTS_12'}
+INFO:     112.219.113.186:2101 - "POST /run-pipeline/ HTTP/1.1" 202 Accepted
+2025-07-17 00:20:25 - INFO - ======= PIPELINE START for source table: 12_example =======
+2025-07-17 00:25:41 - INFO - Using provided connection to fetch from table: 12_example
+2025-07-17 00:25:41 - INFO - Executing query to fetch source data...
+2025-07-17 00:25:43 - INFO - Fetched 20 rows from the source database.
+2025-07-17 00:25:43 - INFO - Starting dataframe processing...
+Device set to use cpu
+2025-07-17 00:30:44 - INFO - Local NER model loaded from '/home/opc/ner_project/final-korean-ner-model-optimized_v2'.
+DataFrame Processing:   0%|          | 0/20 [00:00<?, ?it/s]Device set to use cpu
+2025-07-17 00:30:46 - INFO - Local NER model loaded from '/home/opc/ner_project/final-korean-ner-model-optimized_v2'.
+
+DataFrame Processing:   0%|          | 0/20 [00:00<?, ?it/s][A
+DataFrame Processing:   5%|▌         | 1/20 [00:00<00:11,  1.62it/s][ADataFrame Processing:   5%|▌         | 1/20 [00:02<00:49,  2.60s/it]
+DataFrame Processing:  20%|██        | 4/20 [00:00<00:02,  6.42it/s][ADataFrame Processing:  20%|██        | 4/20 [00:02<00:08,  1.88it/s]
+DataFrame Processing:  35%|███▌      | 7/20 [00:00<00:01, 10.38it/s][ADataFrame Processing:  35%|███▌      | 7/20 [00:02<00:03,  3.70it/s]DataFrame Processing:  35%|███▌      | 7/20 [00:20<00:03,  3.70it/s]
+DataFrame Processing:  35%|███▌      | 7/20 [00:18<00:01, 10.38it/s][ADataFrame Processing:  40%|████      | 8/20 [00:29<01:06,  5.57s/it]DataFrame Processing:  45%|████▌     | 9/20 [00:30<00:51,  4.72s/it]DataFrame Processing:  55%|█████▌    | 11/20 [00:31<00:26,  2.92s/it]
+DataFrame Processing:  40%|████      | 8/20 [01:03<02:32, 12.74s/it][A
+DataFrame Processing:  45%|████▌     | 9/20 [01:04<01:50, 10.07s/it][A
+DataFrame Processing:  55%|█████▌    | 11/20 [01:04<00:55,  6.17s/it][A
+DataFrame Processing:  55%|█████▌    | 11/20 [01:17<00:55,  6.17s/it][ADataFrame Processing:  65%|██████▌   | 13/20 [02:16<02:25, 20.83s/it]DataFrame Processing:  70%|███████   | 14/20 [02:17<01:40, 16.78s/it]
+DataFrame Processing:  65%|██████▌   | 13/20 [02:45<02:35, 22.14s/it][A
+DataFrame Processing:  70%|███████   | 14/20 [02:47<01:47, 17.97s/it][A
+DataFrame Processing:  75%|███████▌  | 15/20 [02:47<01:09, 14.00s/it][ADataFrame Processing:  80%|████████  | 16/20 [04:01<01:58, 29.59s/it]DataFrame Processing:  85%|████████▌ | 17/20 [04:22<01:23, 27.86s/it]DataFrame Processing:  90%|█████████ | 18/20 [04:23<00:43, 21.86s/it]
+DataFrame Processing:  80%|████████  | 16/20 [04:46<02:38, 39.54s/it][A
+DataFrame Processing:  85%|████████▌ | 17/20 [05:09<01:45, 35.29s/it][A
+DataFrame Processing:  90%|█████████ | 18/20 [05:10<00:51, 25.97s/it][A
+DataFrame Processing: 100%|██████████| 20/20 [05:49<00:00, 23.21s/it][ADataFrame Processing: 100%|██████████| 20/20 [05:49<00:00, 17.48s/it]
+2025-07-17 00:36:37 - INFO - DataFrame processing finished.
+2025-07-17 00:44:56 - INFO - Connecting to ADW to load data...
+2025-07-17 00:45:05 - INFO - Successfully established connection to ADW.
+2025-07-17 00:45:05 - INFO - Loading 20 rows into ADW table: PROCESSED_DATA_12 (manual insert)
+2025-07-17 00:45:05 - INFO - Table 'PROCESSED_DATA_12' did not exist or could not be dropped: ORA-00942: table or view "ADMIN"."PROCESSED_DATA_12" does not exist
+2025-07-17 00:45:05 - INFO - Created table 'PROCESSED_DATA_12' with CLOB columns.
+2025-07-17 00:45:07 - INFO - Successfully inserted 20 rows into PROCESSED_DATA_12.
+2025-07-17 00:45:07 - INFO - Loading 61 rows into ADW table: ANTIBIOTICS_DATA_12 (manual insert)
+2025-07-17 00:45:07 - INFO - Table 'ANTIBIOTICS_DATA_12' did not exist or could not be dropped: ORA-00942: table or view "ADMIN"."ANTIBIOTICS_DATA_12" does not exist
+2025-07-17 00:45:07 - INFO - Created table 'ANTIBIOTICS_DATA_12' with CLOB columns.
+2025-07-17 00:45:07 - INFO - Successfully inserted 61 rows into ANTIBIOTICS_DATA_12.
+2025-07-17 00:45:07 - INFO - No data to load into 'FAILED_REPORTS_12'. Skipping.
+2025-07-17 00:45:08 - INFO - ADW connection closed.
+2025-07-17 00:45:08 - INFO - Source DB connection closed.
+2025-07-17 00:45:08 - INFO - ======= PIPELINE FINISHED for target tables: PROCESSED_DATA_12, ANTIBIOTICS_DATA_12, FAILED_REPORTS_12 =======
+DataFrame Processing: 100%|██████████| 20/20 [14:27<00:00, 132.56s/it]DataFrame Processing: 100%|██████████| 20/20 [14:27<00:00, 43.36s/it] 
+2025-07-17 00:45:12 - INFO - DataFrame processing finished.
+2025-07-17 00:48:09 - INFO - Connecting to ADW to load data...
+2025-07-17 00:48:12 - INFO - Successfully established connection to ADW.
+2025-07-17 00:48:12 - INFO - Loading 20 rows into ADW table: PROCESSED_DATA_12 (manual insert)
+2025-07-17 00:48:12 - INFO - Existing table 'PROCESSED_DATA_12' dropped.
+2025-07-17 00:48:13 - INFO - Created table 'PROCESSED_DATA_12' with CLOB columns.
+2025-07-17 00:48:14 - INFO - Successfully inserted 20 rows into PROCESSED_DATA_12.
+2025-07-17 00:48:14 - INFO - Loading 61 rows into ADW table: ANTIBIOTICS_DATA_12 (manual insert)
+2025-07-17 00:48:14 - INFO - Existing table 'ANTIBIOTICS_DATA_12' dropped.
+2025-07-17 00:48:14 - INFO - Created table 'ANTIBIOTICS_DATA_12' with CLOB columns.
+2025-07-17 00:48:14 - INFO - Successfully inserted 61 rows into ANTIBIOTICS_DATA_12.
+2025-07-17 00:48:14 - INFO - No data to load into 'FAILED_REPORTS_12'. Skipping.
+2025-07-17 00:48:14 - INFO - ADW connection closed.
+2025-07-17 00:48:15 - INFO - Source DB connection closed.
+2025-07-17 00:48:15 - INFO - ======= PIPELINE FINISHED for target tables: PROCESSED_DATA_12, ANTIBIOTICS_DATA_12, FAILED_REPORTS_12 =======
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     198.235.24.177:60596 - "GET / HTTP/1.1" 200 OK
+INFO:     3.132.23.201:50398 - "GET / HTTP/1.1" 200 OK
+INFO:     3.132.23.201:51950 - "GET / HTTP/1.1" 200 OK
+INFO:     112.219.113.186:2102 - "GET /run-pipeline/ HTTP/1.1" 405 Method Not Allowed
+INFO:     112.219.113.186:2102 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     198.235.24.252:58474 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     167.172.164.240:38830 - "GET / HTTP/1.1" 200 OK
+INFO:     167.172.164.240:57878 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     205.210.31.161:58400 - "GET / HTTP/1.1" 200 OK
+INFO:     64.62.197.197:57602 - "GET / HTTP/1.1" 200 OK
+INFO:     64.62.197.203:61375 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     64.62.197.210:64625 - "GET /?format=json HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     185.247.137.122:36025 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     205.210.31.231:65424 - "GET / HTTP/1.1" 200 OK
+INFO:     20.98.137.225:51242 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     198.235.24.211:63536 - "GET / HTTP/1.1" 200 OK
+INFO:     205.210.31.17:63220 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     139.59.72.36:51522 - "GET / HTTP/1.1" 200 OK
+INFO:     139.59.72.36:51524 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     185.165.191.26:50452 - "GET / HTTP/1.1" 200 OK
+INFO:     185.165.191.26:50462 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     64.62.156.80:17712 - "GET / HTTP/1.1" 200 OK
+INFO:     64.62.156.88:8231 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     64.62.156.84:5937 - "GET /?format=json HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     147.185.132.222:58874 - "GET / HTTP/1.1" 200 OK
+INFO:     205.210.31.30:57474 - "GET / HTTP/1.1" 200 OK
+INFO:     3.130.96.91:53182 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     44.220.188.39:59250 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     65.109.163.144:50228 - "GET / HTTP/1.1" 200 OK
+INFO:     35.241.210.82:51130 - "GET / HTTP/1.1" 200 OK
+INFO:     147.185.132.183:63480 - "GET / HTTP/1.1" 200 OK
+INFO:     103.203.57.20:57304 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     199.45.154.154:55558 - "GET / HTTP/1.1" 200 OK
+INFO:     199.45.154.154:55562 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     199.45.154.154:55622 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     199.45.154.154:39592 - "GET /wiki HTTP/1.1" 404 Not Found
+INFO:     18.97.19.189:38490 - "GET / HTTP/1.1" 200 OK
+INFO:     198.235.24.38:62474 - "GET / HTTP/1.1" 200 OK
+INFO:     65.49.1.162:34482 - "GET / HTTP/1.1" 200 OK
+INFO:     65.49.1.162:65221 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     65.49.1.164:11761 - "GET /?format=json HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     165.227.8.226:50916 - "GET / HTTP/1.1" 200 OK
+INFO:     165.227.8.226:50922 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     147.185.132.112:61098 - "GET / HTTP/1.1" 200 OK
+INFO:     3.130.96.91:52892 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     34.93.210.140:34664 - "GET / HTTP/1.1" 200 OK
+INFO:     18.97.19.204:54350 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     205.210.31.22:57808 - "GET / HTTP/1.1" 200 OK
+INFO:     172.236.228.218:39198 - "GET / HTTP/1.1" 200 OK
+INFO:     205.210.31.242:60478 - "GET / HTTP/1.1" 200 OK
+INFO:     45.156.128.126:44427 - "GET / HTTP/1.1" 200 OK
+INFO:     45.156.128.47:52997 - "GET /console HTTP/1.1" 404 Not Found
+INFO:     162.142.125.201:36418 - "GET / HTTP/1.1" 200 OK
+INFO:     162.142.125.201:44820 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     162.142.125.201:45636 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     162.142.125.201:58528 - "GET /login HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     165.227.22.140:55568 - "GET / HTTP/1.1" 200 OK
+INFO:     178.128.73.18:42552 - "GET / HTTP/1.0" 200 OK
+INFO:     159.89.120.87:54994 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     205.210.31.135:57406 - "GET / HTTP/1.1" 200 OK
+INFO:     147.185.132.69:59356 - "GET / HTTP/1.1" 200 OK
+INFO:     198.235.24.110:60624 - "GET / HTTP/1.1" 200 OK
+INFO:     3.130.96.91:39410 - "GET / HTTP/1.1" 200 OK
+INFO:     3.130.96.91:44120 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     185.242.226.48:34832 - "GET / HTTP/1.1" 200 OK
+INFO:     139.177.201.59:42966 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     65.49.1.182:62734 - "GET / HTTP/1.1" 200 OK
+INFO:     65.49.1.191:38819 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     65.49.1.183:31809 - "GET /?format=json HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     198.235.24.225:63078 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     185.247.137.113:53161 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     198.235.24.12:61244 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     134.209.154.248:50726 - "GET / HTTP/1.1" 200 OK
+INFO:     134.209.154.248:50730 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     162.142.125.204:41480 - "GET / HTTP/1.1" 200 OK
+INFO:     162.142.125.204:41502 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     162.142.125.204:38686 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     162.142.125.204:36822 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     20.150.192.39:43316 - "GET / HTTP/1.1" 200 OK
+INFO:     198.235.24.251:58604 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     134.209.228.60:33282 - "GET / HTTP/1.1" 200 OK
+INFO:     134.209.228.60:42804 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     134.209.228.60:42806 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     8.221.136.154:38192 - "GET / HTTP/1.1" 200 OK
+INFO:     123.160.223.74:55050 - "GET / HTTP/1.1" 200 OK
+INFO:     123.160.223.75:39664 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     147.185.132.183:65390 - "GET / HTTP/1.1" 200 OK
+INFO:     3.130.96.91:50492 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     65.49.1.108:58620 - "GET / HTTP/1.1" 200 OK
+INFO:     65.49.1.108:57091 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     65.49.1.113:12643 - "GET /?format=json HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     45.156.128.128:54001 - "GET / HTTP/1.1" 200 OK
+INFO:     45.156.128.128:41083 - "GET /console HTTP/1.1" 404 Not Found
+INFO:     186.13.38.193:58445 - "GET / HTTP/1.0" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     192.155.90.118:12942 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     147.185.132.118:59958 - "GET / HTTP/1.1" 200 OK
+INFO:     196.251.86.124:52460 - "GET / HTTP/1.1" 200 OK
+INFO:     45.156.130.47:48595 - "GET / HTTP/1.1" 200 OK
+INFO:     45.156.130.47:38169 - "GET /console HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.235.24.140:62298 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     196.251.86.124:33404 - "GET / HTTP/1.1" 200 OK
+INFO:     162.142.125.39:39892 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     162.142.125.39:54378 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     162.142.125.39:39798 - "GET /wiki HTTP/1.1" 404 Not Found
+INFO:     205.210.31.14:63090 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     147.185.132.49:57930 - "GET / HTTP/1.1" 200 OK

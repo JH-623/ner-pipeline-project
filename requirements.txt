@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pandas
+torch
+transformers
+sqlalchemy
+oracledb
+fuzzywuzzy
+python-Levenshtein
+tqdm
+numpy
