@@ -60,3 +60,18 @@ jobs:
               -p 8000:8000 \
               -v /home/opc/ner_project/Wallet_QJ5STCTDZPUJ2AMT:/app/adw_wallet:ro \
               ${IMAGE_NAME}:latest
+
+                    # --- 아래 단계를 deploy 작업의 마지막에 추가 ---
+      - name: Create and push tag
+        run: |
+          # 날짜 기반으로 태그 이름 생성 (예: model-20250722-1457)
+          TAG_NAME="model-$(date +%Y%m%d-%H%M)"
+          echo "Creating tag ${TAG_NAME}"
+
+          # Git 사용자 정보 설정
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+          # 태그 생성 및 푸시
+          git tag ${TAG_NAME}
+          git push origin ${TAG_NAME}
