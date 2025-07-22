@@ -42,8 +42,8 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          timeout: 3600
-          command_timeout: 3600
+          timeout: 60m
+          command_timeout: 60m
           script: |
             # GHCR 로그인
             /usr/bin/docker login ghcr.io -u ${{ github.repository_owner }} -p ${{ secrets.PAT }}
