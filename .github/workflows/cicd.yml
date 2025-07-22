@@ -2,34 +2,33 @@
 
 name: CI Pipeline - Build and Push Docker Image
 
-# main 브랜치에 코드가 푸시될 때마다 이 워크플로우를 실행
 on:
   push:
     branches: [ "main" ]
 
 jobs:
   build-and-push:
-    # 작업은 최신 우분투 환경에서 실행
     runs-on: ubuntu-latest
 
     steps:
-      # 1. 저장소의 코드를 runner로 가져옴
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. GHCR에 로그인
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.PAT }} # 1단계에서 등록한 Secret 사용
+          password: ${{ secrets.PAT }}
 
-      # 3. Docker 이미지 빌드 및 푸시
+      # --- 이 부분이 수정/추가되었습니다 ---
+      - name: Set image name to lowercase
+        run: echo "IMAGE_NAME=$(echo ghcr.io/${{ github.repository }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+      
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          # 이미지 태그를 ghcr.io/<사용자이름>/<저장소이름>:latest 형식으로 지정
-          tags: ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest
+          tags: ${{ env.IMAGE_NAME }}:latest
+      # -----------------------------------
