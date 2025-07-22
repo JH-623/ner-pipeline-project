@@ -1,6 +1,6 @@
 # .github/workflows/cicd.yml
 
-name: CI Pipeline - Build and Push Docker Image
+name: CI/CD Pipeline - Build, Push, and Deploy
 
 on:
   push:
@@ -9,7 +9,6 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -21,7 +20,6 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.PAT }}
 
-      # --- 이 부분이 수정/추가되었습니다 ---
       - name: Set image name to lowercase
         run: echo "IMAGE_NAME=$(echo ghcr.io/${{ github.repository }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
       
@@ -31,4 +29,34 @@ jobs:
           context: .
           push: true
           tags: ${{ env.IMAGE_NAME }}:latest
-      # -----------------------------------
+
+  # --- 아래 deploy 작업이 새로 추가되었습니다 ---
+  deploy:
+    # build-and-push 작업이 성공해야만 실행됨
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to OCI VM
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            # GHCR에 로그인
+            docker login ghcr.io -u ${{ github.repository_owner }} -p ${{ secrets.PAT }}
+            
+            # 기존 컨테이너가 있으면 중지하고 삭제 (오류 무시)
+            docker stop ner-api-server || true
+            docker rm ner-api-server || true
+            
+            # 최신 이미지 pull
+            export IMAGE_NAME=$(echo ghcr.io/${{ github.repository }} | tr '[:upper:]' '[:lower:]')
+            docker pull ${IMAGE_NAME}:latest
+            
+            # 새 컨테이너 실행
+            docker run -d \
+              --name ner-api-server \
+              -p 8000:8000 \
+              -v /home/opc/ner_project/Wallet_QJ5STCTDZPUJ2AMT:/app/adw_wallet:ro \
+              ${IMAGE_NAME}:latest
