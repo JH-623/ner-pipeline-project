@@ -40,6 +40,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          timeout: 30m
           script: |
             # 모든 docker 명령어 앞에 /usr/bin/docker 와 같이 전체 경로를 사용합니다.
             /usr/bin/docker login ghcr.io -u ${{ github.repository_owner }} -p ${{ secrets.PAT }}
