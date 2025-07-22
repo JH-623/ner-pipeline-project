@@ -34,23 +34,30 @@ jobs:
     needs: build-and-push
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to OCI VM
+      # 1단계: 로그인하고 오래 걸리는 이미지를 pull 받기
+      - name: Pull latest image on VM
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          timeout: 30m
+          timeout: 30m  # 이미지 pull을 위해 30분 대기
           script: |
-            # 모든 docker 명령어 앞에 /usr/bin/docker 와 같이 전체 경로를 사용합니다.
             /usr/bin/docker login ghcr.io -u ${{ github.repository_owner }} -p ${{ secrets.PAT }}
-            
-            /usr/bin/docker stop ner-api-server || true
-            /usr/bin/docker rm ner-api-server || true
-            
             export IMAGE_NAME=$(echo ghcr.io/${{ github.repository }} | tr '[:upper:]' '[:lower:]')
             /usr/bin/docker pull ${IMAGE_NAME}:latest
-            
+
+      # 2단계: 기존 컨테이너를 중지하고 새 컨테이너 실행
+      - name: Stop, Remove, and Run new container
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            /usr/bin/docker stop ner-api-server || true
+            /usr/bin/docker rm ner-api-server || true
+            export IMAGE_NAME=$(echo ghcr.io/${{ github.repository }} | tr '[:upper:]' '[:lower:]')
             /usr/bin/docker run -d \
               --name ner-api-server \
               -p 8000:8000 \
