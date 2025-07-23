@@ -1,0 +1,36 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "tokens": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "ner_tags": {
+      "feature": {
+        "names": [
+          "B-ANTIBIOTIC",
+          "B-INTERPRETATION",
+          "B-MIC",
+          "B-ORGANISM",
+          "B-QUANTITY",
+          "B-RESISTANCE",
+          "I-ANTIBIOTIC",
+          "I-INTERPRETATION",
+          "I-MIC",
+          "I-ORGANISM",
+          "I-QUANTITY",
+          "I-RESISTANCE",
+          "O"
+        ],
+        "_type": "ClassLabel"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

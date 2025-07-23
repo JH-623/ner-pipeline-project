@@ -1,11 +1,20 @@
+# API Serving & General
 fastapi
 uvicorn[standard]
-pandas
-torch
-transformers
 sqlalchemy
 oracledb
+tqdm
+
+# Data Handling & NLP
+pandas
+numpy
 fuzzywuzzy
 python-Levenshtein
-tqdm
-numpy
+
+# Model Training & Evaluation
+torch
+transformers
+datasets
+optuna
+seqeval
+GitPython
