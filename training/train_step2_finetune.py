@@ -42,16 +42,77 @@ def get_latest_versions(base_path):
     print(f"   - 최신 사전 파일: {os.path.basename(latest_dict_file)} (버전 {current_version})")
     print(f"   - 새 모델 저장 경로: {os.path.basename(output_model_dir)} (버전 {next_version})")
 
-    return latest_dict_file, output_model_dir
+    return latest_dict_file, output_model_dir, next_version
+
+
+# ------------------- 압축/해제 헬퍼 함수 ------------------- #
+def unzip_model_if_needed(model_path):
+    """지정된 경로의 모델 파일 압축을 해제합니다."""
+    print(f"Checking for zipped models in {model_path}...")
+    # optimizer.pt 같은 대용량 파일이 압축되어 있는지 확인
+    zip_files = glob.glob(os.path.join(model_path, '**', '*_archive.zip'), recursive=True)
+    if not zip_files:
+        print("No zipped models found to unzip.")
+        return
+
+    for zip_file in zip_files:
+        # 원본 파일 이름은 '_archive'를 제외한 이름으로 가정 (예: optimizer.pt)
+        original_filename = os.path.basename(zip_file).replace('_archive.zip', '.pt')  # .pt 외 다른 확장자도 고려 필요 시 수정
+        if 'optimizer' not in original_filename:  # optimizer.pt 외 다른 파일일 경우를 대비
+            original_filename = os.path.basename(zip_file).replace('_archive.zip', '.safetensors')
+
+        output_path = os.path.dirname(zip_file)
+        original_filepath = os.path.join(output_path, original_filename)
+
+        # 이미 원본 파일이 있으면 건너뛰기
+        if os.path.exists(original_filepath):
+            print(f"{original_filename} already exists. Skipping unzip.")
+            continue
+
+        print(f"Unzipping {zip_file} to {original_filepath}...")
+        command = f'zip -s 0 "{zip_file}" --out "{original_filepath}"'
+        result = os.system(command)
+        if result == 0:
+            print("Unzip successful.")
+        else:
+            raise RuntimeError(f"Error unzipping file: {zip_file}")
+
+
+def zip_and_cleanup_large_files(model_path):
+    """지정된 경로에서 2GB가 넘는 파일을 찾아 분할 압축하고 원본을 삭제합니다."""
+    print(f"Checking for large files to zip in {model_path}...")
+    large_files = []
+    # 2GB = 2 * 1024 * 1024 * 1024 bytes
+    size_limit_bytes = 2 * 1024 * 1024 * 1024
+    for dirpath, _, filenames in os.walk(model_path):
+        for filename in filenames:
+            filepath = os.path.join(dirpath, filename)
+            if os.path.exists(filepath) and not os.path.islink(filepath):
+                if os.path.getsize(filepath) > size_limit_bytes:
+                    large_files.append(filepath)
+
+    if not large_files:
+        print("No large files (>2GB) found to zip.")
+        return
+
+    for large_file in large_files:
+        print(f"Found large file: {large_file}")
+        archive_name = os.path.splitext(large_file)[0] + '_archive.zip'
+        print(f"Zipping to {archive_name}...")
+        command = f'zip -s 1g "{archive_name}" "{large_file}"'
+        result = os.system(command)
+        if result == 0:
+            print(f"Zip successful. Deleting original file: {large_file}")
+            os.remove(large_file)
+        else:
+            raise RuntimeError(f"Error zipping file: {large_file}")
 
 
 # ------------------- 사용자 설정 ------------------- #
-BASE_DIR = '/home/opc/ner_project/training_workspace'  # OCI VM 내의 실제 작업 경로로 수정 필요
+BASE_DIR = '/home/opc/ner_project/training'  # OCI VM 내의 실제 작업 경로
 DATASET_DIR = os.path.join(BASE_DIR, 'korean-ner-augmented-v1-dataset')
 BASE_MODEL_PATH = os.path.join(BASE_DIR, 'english-ner-model')
-
-# 아래 두 줄이 자동으로 설정되도록 변경되었습니다.
-MEDICAL_DICT_PATH, OUTPUT_MODEL_DIR = get_latest_versions(BASE_DIR)
+MEDICAL_DICT_PATH, OUTPUT_MODEL_DIR, next_version = get_latest_versions(BASE_DIR)
 
 # ------------------- 전역 변수 설정 ------------------- #
 tokenizer = None
@@ -169,8 +230,11 @@ def objective(trial):
 
 # ------------------- 훈련 실행부 ------------------- #
 if __name__ == "__main__":
-    print("🚀 1. 데이터 및 토크나이저 준비...")
+    # --- 학습 전 베이스 모델 압축 해제 ---
+    print("\n🚀 0. 베이스 모델 압축 해제 확인...")
+    unzip_model_if_needed(BASE_MODEL_PATH)
 
+    print("\n🚀 1. 데이터 및 토크나이저 준비...")
     tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL_PATH)
     custom_tokens = load_domain_tokens(MEDICAL_DICT_PATH)
     added_tokens = [AddedToken(t, single_word=True) for t in custom_tokens]
@@ -240,3 +304,48 @@ if __name__ == "__main__":
     final_trainer.save_model(OUTPUT_MODEL_DIR)
     tokenizer.save_pretrained(OUTPUT_MODEL_DIR)
     print(f"\n🎉 최적화된 한국어 NER 모델 저장 완료: '{OUTPUT_MODEL_DIR}'")
+
+    # --- 학습 후 새 모델 압축 및 정리 ---
+    print("\n🚀 4. 새로 생성된 대용량 모델 파일 압축 및 정리...")
+    zip_and_cleanup_large_files(OUTPUT_MODEL_DIR)
+
+    print("\n🚀 5. 새 모델 성능 평가 및 자동 배포 시작...")
+
+    # 5-1. 방금 훈련한 새 모델의 F1 점수 가져오기
+    eval_results = final_trainer.evaluate()
+    new_f1_score = eval_results.get("eval_f1", 0.0)
+    print(f" - 새 모델 F1 점수: {new_f1_score:.4f}")
+
+    # 5-2. 현재 서비스 중인 모델의 성능 지표 로드
+    production_metrics_file = os.path.join(BASE_DIR, 'production_metrics.json')
+    try:
+        with open(production_metrics_file, 'r') as f:
+            prod_metrics = json.load(f)
+        prod_f1_score = prod_metrics.get("f1", 0.0)
+    except FileNotFoundError:
+        prod_f1_score = 0.0  # 파일이 없으면 0점으로 간주하여 항상 업데이트
+
+    print(f" - 현재 모델 F1 점수: {prod_f1_score:.4f}")
+
+    # 5-3. 성능 비교 후 자동 배포 결정
+    if new_f1_score > prod_f1_score:
+        print("\n✅ 성능 향상! 새 모델을 Git에 푸시하여 자동 배포를 시작합니다.")
+
+        # 새 성능 지표를 파일에 저장 (다음 비교를 위해)
+        with open(production_metrics_file, 'w') as f:
+            json.dump({"f1": new_f1_score}, f)
+
+        # Git 명령어 실행
+        try:
+            os.system('git config --global user.name "AutoTrain Bot"')
+            os.system('git config --global user.email "bot@example.com"')
+            os.system('git add .')
+            commit_message = f"Auto-train: Update model to v{next_version} with F1 score {new_f1_score:.4f}"
+            os.system(f'git commit -m "{commit_message}"')
+            os.system('git push origin main')
+            print("✅ Git push 완료! CD 파이프라인이 새 모델을 배포합니다.")
+        except Exception as e:
+            print(f"❌ Git push 중 오류 발생: {e}")
+
+    else:
+        print("\n❌ 성능이 향상되지 않았으므로 현재 모델을 유지합니다.")
